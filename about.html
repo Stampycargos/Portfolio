@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Stampycargos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Specific Styles for About Page */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        .about-hero {
+            text-align: center;
+            padding: 140px 20px 60px;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto 100px;
+            padding: 0 20px;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .about-content h2 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .skill-tag {
+            background: var(--soft-blue);
+            color: var(--primary-blue);
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0, 102, 255, 0.05);
+        }
+
+        .journey-card {
+            background: white;
+            border: 1px solid rgba(0, 102, 255, 0.1);
+            padding: 30px;
+            border-radius: 24px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="modern-nav">
+            <div class="logo">Stampy<span>cargos</span></div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="groups.html">Groups</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="pfp-container">
+                <img src="images/Stampypfp.webp" alt="Stampycargos" class="pfp">
+            </div>
+            <h1>About <span>Me</span></h1>
+            <p class="subtitle">The story behind the builds and designs.</p>
+        </section>
+
+        <section class="about-content">
+            <div class="journey-card">
+                <h2>Who is Stampycargos?</h2>
+                <p>
+                    I am a passionate Roblox Developer and Web Designer dedicated to creating immersive digital experiences. 
+                    With a focus on  map designs and efficient Luau scripting, I help game studios and individuals bring 
+                    their creative visions to life within the Roblox ecosystem.
+                </p>
+                <p>
+                    Beyond the engine, I build high-performance websites (like this one!) to help creators establish 
+                    a professional presence. I believe that every project, whether it's a game or a landing page, 
+                    should be functional, fast, and visually striking.
+                </p>
+            </div>
+
+            <h2 style="margin-top: 60px; text-align: center;">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Luau Scripting</div>
+                <div class="skill-tag">Map Planning</div>
+                <div class="skill-tag">HTML / CSS</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Roblox Studio</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Stampycargos • All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

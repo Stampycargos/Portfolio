@@ -3,21 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    
+    <title>Stampycargos | Official</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <header>
-        <h1>Stampycargos Portfolio</h1>
+        <nav class="modern-nav">
+            <div class="logo">Stampy<span>cargos</span></div>
+            
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="groups.html">Groups</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <p>Hello</p>
-            <img src="images/Stampypfp.webp" alt="StampycargosPFP">
+        <section class="hero">
+            <div class="pfp-container">
+                <img src="images/Stampypfp.webp" alt="Stampycargos" class="pfp">
+            </div>
+            <h1>Stampycargos</h1>
+            <p class="subtitle">Roblox Developer & Website Designer</p>
+        </section>
+
+        <section id="links" class="section-container">
+            <h2 class="section-title">Connect with Me</h2>
+            <div class="link-grid">
+                <a href="https://www.roblox.com/users/663883843/profile" class="btn">Roblox</a>
+                <a href="https://discord.com/invite/SfSMNqCx6S" class="btn">Discord Server</a>
+                <a href="https://x.com/stampycargos" class="btn">Follow on X</a>
+                <a href="https://www.youtube.com/channel/UCjHNZHYNSauwJjPzGE8OQoQ" class="btn">Subscribe on YouTube</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-container">
+            <h2 class="section-title">Latest Work</h2>
+            <div class="portfolio-grid">
+                <div class="work-card">
+                    <div class="work-img-placeholder">Project Alpha</div>
+                    <h3>UI Design System</h3>
+                    <p>Modern and clean UI for Roblox simulators.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-img-placeholder">Project Beta</div>
+                    <h3>Custom Web Landing</h3>
+                    <p>High-performance sites for game studios.</p>
+                </div>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p></p>
+        <p>© 2026 Stampycargos • All Rights Reserved</p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
